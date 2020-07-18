@@ -29,6 +29,7 @@
   .greeting-text-p {
     font-size: 30px;
     line-height: 40px;
+    color: gray;
   }
   
   .greeting-image-div > img {
