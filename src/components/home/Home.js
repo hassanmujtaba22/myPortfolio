@@ -2,7 +2,8 @@ import React from 'react'
 import emoji from "react-easy-emoji";
 import { greeting } from "../../data/data.js"
 import "./Home.modules.css"
-
+import Button from "../button/Button"
+import SocialMedia from "../socialMedia/SocialMedia"
 function Home() {
     return (
             <div className="greet-main" id="greeting">
@@ -20,15 +21,14 @@ function Home() {
                                 {greeting.profession}    
                                 {greeting.subTitle}
                             </p>
-                            {/* <SocialMedia /> */}
+                            <SocialMedia />
                             <div className="button-greeting-div">
-                                {/* <Button text="Contact me" href="#contact" /> */}
-                                {/* <Button text="See my resume" newTab={true} href={greeting.resumeLink} /> */}
+                                <Button text="Contact me" href="#contact" />
+                                <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
                             </div>
                         </div>
                     </div>
                     <div className="greeting-image-div">
-                        {/* <img alt="saad sitting on table" src={require("../../assets/images/manOnTable.svg")}></img> */}
                         <img src="./images/homeicon.svg" alt="greetingIcon"/>
                     </div>
                 </div>

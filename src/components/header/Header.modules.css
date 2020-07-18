@@ -18,11 +18,13 @@
     padding: 10px 20px;
     color: black;
     text-decoration: none;
+    transition: background 0.2s ease-in;
   }
   
   .header li a:hover,
   .header .menu-btn:hover {
-    background-color: #f4f4f4;
+    background-color: #ff00001e;
+    /* color: white; */
   }
   
   .header .logo {
@@ -42,7 +44,6 @@
     max-height: 0;
     transition: max-height 0.2s ease-out;
   }
-  
   /* menu icon */
   
   .header .menu-icon {
@@ -55,7 +56,7 @@
   }
   
   .header .menu-icon .navicon {
-    background: #333;
+    background: #FF0002;
     display: block;
     height: 3px;
     position: relative;
@@ -65,7 +66,7 @@
   
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
-    background: #333;
+    background: #FF0002;
     content: "";
     display: block;
     height: 100%;
