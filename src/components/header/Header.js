@@ -5,7 +5,7 @@ function Header() {
         <>
             <header className="header">
                 <a href="/">
-                    <img className="logo" src="/images/logo.png" />
+                    <img className="logo" src="/images/logo.png" alt="Logo" />
                 </a>
                 <input className="menu-btn" type="checkbox" id="menu-btn" />
                 <label className="menu-icon" htmlFor="menu-btn">
@@ -16,10 +16,10 @@ function Header() {
                         <a href="#skills">Skills</a>
                     </li>
                     <li>
-                        <a href="#projects">Projects</a>
+                        <a href="#achievements">Achievements</a>
                     </li>
                     <li>
-                        <a href="#achievements">Achievements</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li>
                         <a href="#services">Services</a>

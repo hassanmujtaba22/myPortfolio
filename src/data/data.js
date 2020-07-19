@@ -41,4 +41,14 @@ const skillsSection = {
     ]
 }
 
-export {greeting, socialMediaLink, skillsSection}
+const certificates = {
+  mern: {title: "MERN Stack Development", image: "./images/MERNStack.JPG"},
+  excel: {title: "Excel MOS Certification", image: "./images/excelcertificate.JPG"},
+  word: {title: "Word MOS Certification", image: "./images/wordcertificate.JPG"},
+  graphic: {title: "Graphic Designing Certificate", image: "./images/graphicCertificate.JPG"},
+}
+
+const achievementSection = {
+  title: "Achievements And Certifications 🏆"
+}
+export {greeting, socialMediaLink, skillsSection, certificates, achievementSection}
