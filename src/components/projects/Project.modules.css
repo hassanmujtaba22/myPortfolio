@@ -53,6 +53,10 @@
 .image{
   width: 100%;
 }
+.button{
+  display: flex;
+  justify-content: center;
+}
   /* Media Query */
   @media (max-width: 1380px) {
     .project-title {

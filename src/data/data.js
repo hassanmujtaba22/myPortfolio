@@ -6,9 +6,9 @@ import emoji from "react-easy-emoji";
 
 const greeting = {
     username: "Hassan Mujtaba",
-    title: emoji(`My name is Hassan Mujtaba.`),
+    title: emoji(`I'm Hassan Mujtaba.`),
     profession: "I am a Web and Mobile Application Developer by Profession and hobby.",
-    subTitle: emoji("🚀 having an experience of building applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."),
+    subTitle: emoji("🚀 having an experience of building applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks. I love to architect, code solutions and solving coding challenges."),
 }
 
 const socialMediaLink = {
@@ -58,4 +58,17 @@ const projects = {
   ecommerce: {title: "Shoes Store", image: "./images/shoestore.JPG", live: "http://hassanmujtaba-shoesstore.surge.sh", githublink: "https://github.com/hassanmujtaba22/ShoesStore"},
   calculator: {title: "Calculator", image: "./images/calculator.JPG", live: "", githublink: "https://github.com/hassanmujtaba22/SM-WM-Assignments/tree/master/public/calculator-using-JS"},
 }
-export {greeting, socialMediaLink, skillsSection, certificates, achievementSection, projects}
+
+const contact = {
+  heading: "Contact",
+  subheading: "Get in touch with me",
+  call: "0320-3406130",
+  location: "Karachi, Pakistan",
+  mail: "hassan03203406130@gmail.com",
+  image: "./images/mypic.png"
+}
+const footer = {
+  madewith: emoji(`Made with ❤️ by ${greeting.username}`)
+
+}
+export {greeting, socialMediaLink, skillsSection, certificates, achievementSection, projects, contact, footer}
