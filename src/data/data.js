@@ -51,4 +51,11 @@ const certificates = {
 const achievementSection = {
   title: "Achievements And Certifications 🏆"
 }
-export {greeting, socialMediaLink, skillsSection, certificates, achievementSection}
+
+const projects = {
+  incomeExpense: {title: "Income Expense App", image: "./images/incomeexpence.JPG", live: "http://hassanmujtaba-income-expense.surge.sh", githublink: "https://github.com/hassanmujtaba22/Income-Expense-App"},
+  covid19: {title: "Covid 19 Tracker App", image: "./images/covid19.JPG", live: "http://hassanmujtaba-covid19.surge.sh", githublink: "https://github.com/hassanmujtaba22/covid-19-project"},
+  ecommerce: {title: "Shoes Store", image: "./images/shoestore.JPG", live: "http://hassanmujtaba-shoesstore.surge.sh", githublink: "https://github.com/hassanmujtaba22/ShoesStore"},
+  calculator: {title: "Calculator", image: "./images/calculator.JPG", live: "", githublink: "https://github.com/hassanmujtaba22/SM-WM-Assignments/tree/master/public/calculator-using-JS"},
+}
+export {greeting, socialMediaLink, skillsSection, certificates, achievementSection, projects}
