@@ -43,32 +43,32 @@ var dimensions = [
 
 function Certifications() {
     const classes = useStyles();
-AOS.init();
+    AOS.init();
     return (
         <div data-aos="zoom-in-up" data-aos-duration="3000">
-        <div className="main" id="achievements" >
-            <div className="achievement-main-div">
-                <div className="achievement-header">
-                    <h1 className="heading achievement-heading">{achievementSection.title}</h1>
-                </div>
-                <div className="achievement-cards-div">
-                    <Columns queries={queries} dimensions={dimensions}>
-                        {Object.entries(certificates).map(([cert, { title, image }]) => (
-                            <Card className={classes.root}>
-                                <CardActionArea>
-                                    <img src={image} alt={title} style={{height: "100%", width: "100%"}} />
-                                    <CardContent>
-                                        <Typography className={classes.title} gutterBottom variant="h5" component="h2">
-                                            {title}
-                                        </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        ))}
-                    </Columns>
+            <div className="main" id="achievements" >
+                <div className="achievement-main-div">
+                    <div className="achievement-header">
+                        <h1 className="heading achievement-heading">{achievementSection.title}</h1>
+                    </div>
+                    <div className="achievement-cards-div">
+                        <Columns queries={queries} dimensions={dimensions}>
+                            {Object.entries(certificates).map(([cert, { title, image }]) => (
+                                <Card className={classes.root}>
+                                    <CardActionArea>
+                                        <img src={image} alt={title} style={{ height: "100%", width: "100%" }} />
+                                        <CardContent>
+                                            <Typography className={classes.title} gutterBottom variant="h5" component="h2">
+                                                {title}
+                                            </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                </Card>
+                            ))}
+                        </Columns>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     );
 }

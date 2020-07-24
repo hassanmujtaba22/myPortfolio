@@ -21,7 +21,7 @@ AOS.init();
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-left" data-aos-duration="4000">
+            <div data-aos="flip-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
                 <div className="contact-image-div">
                     <img alt="My Pic" src={contact.image}></img>
                 </div>
