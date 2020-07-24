@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Columns from "react-columns"
 import { certificates, achievementSection } from '../../data/data';
-
+import AOS from "aos"
 const useStyles = makeStyles({
     root: {
         maxWidth: "100%",
@@ -43,9 +43,9 @@ var dimensions = [
 
 function Certifications() {
     const classes = useStyles();
-
+AOS.init();
     return (
-
+        <div data-aos="zoom-in-up" data-aos-duration="3000">
         <div className="main" id="achievements" >
             <div className="achievement-main-div">
                 <div className="achievement-header">
@@ -68,7 +68,8 @@ function Certifications() {
                     </Columns>
                 </div>
             </div>
-        </div >
+        </div>
+        </div>
     );
 }
 export default Certifications

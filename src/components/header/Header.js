@@ -1,8 +1,13 @@
 import React from 'react'
 import "./Header.modules.css"
+import AOS from "aos"
+
+
 function Header() {
+    
+    AOS.init();
     return (
-        <>
+        <div data-aos="fade-down" data-aos-duration="3000" data-aos-easing="linear">
             <header className="header">
                 <a href="/">
                     <img className="logo" src="/images/logo.png" alt="Logo" />
@@ -29,7 +34,7 @@ function Header() {
                     </li>
                 </ul>
             </header>
-        </>
+        </div>
     )
 }
 

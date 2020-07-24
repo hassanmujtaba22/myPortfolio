@@ -10,7 +10,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+import AOS from "aos"
 const useStyles = makeStyles({
     root: {
         Width: "100%",
@@ -39,7 +39,9 @@ var queries = [{
 ];
 function Projects() {
 const classes = useStyles();
+AOS.init();    
     return (
+        <div data-aos="zoom-in-up" data-aos-duration="3000">
         <div className="main" id="projects">
             <h1 className="project-title">Projects</h1>
             <Columns queries={queries}>
@@ -67,6 +69,7 @@ const classes = useStyles();
             <div className="button">
                 <Button2 text="More Projects" href={socialMediaLink.github} newTab={true}/>
             </div>
+        </div>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '@material-ui/core';
+// import { Container } from '@material-ui/core';
 
 import Header from "../components/header/Header"
 import Home from "../components/home/Home"
@@ -11,7 +11,8 @@ import Contact from '../components/contact/Contact';
 
 function Main() {
   return (
-    <Container>
+    <div style={{margin: '0px 40px'}}>
+    {/* <Container> */}
         <Header/>    
         <Home/>
         <Skills/>
@@ -19,7 +20,8 @@ function Main() {
         <Projects />
         <Contact/>
         <Footer/>
-    </Container>
+    {/* </Container> */}
+    </div>
   );
 }
 
