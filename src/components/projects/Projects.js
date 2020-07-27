@@ -57,10 +57,10 @@ AOS.init();
                         </CardActionArea>
                         <CardActions>
                             <Button href={live} size="small" className={classes.button}>
-                                Live                  
+                                Live Demo                  
                             </Button>
                             <Button href={githublink} size="small" className={classes.button}>
-                                Sorce Code
+                                Source Code
                             </Button>
                         </CardActions>
                     </Card>
